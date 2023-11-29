@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Serencity - Send Invite</title>
+    <style>
+        /* Add your CSS styling here */
+        .invite-container { width: 100%; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        .form-control { width: 100%; padding: 10px; }
+        .btn { padding: 10px 15px; color: white; background-color: blue; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="invite-container">
+        <div class="form-container invite-form">
+            <form action="/invite" method="post">
+                <h4>Invite a Friend</h4>
+                <div class="form-group">
+                    <label for="eventname">Event Name:</label>
+                    <input type="text" class="form-control" id="eventname" name="eventname" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" class="form-control" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="emails">Emails (comma-separated):</label>
+                    <input type="text" class="form-control" id="emails" name="emails" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Invite Notes:</label>
+                    <textarea class="form-control" id="description" name="description"></textarea>
+                </div>
+                <div class="button-container">
+                    <input type="submit" value="Send Invitation ☺" class="btn">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
